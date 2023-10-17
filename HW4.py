@@ -1,6 +1,6 @@
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Information Security Homework 4
-Brute Force partially known AES cipherkey & plaintext
+Brute Force partially known AES cipherkey
 author: https://github.com/bullyee
 date: 2023/10/16 23:27
 requires package: Cryptodome
@@ -8,8 +8,9 @@ requires package: Cryptodome
 from Crypto.Cipher import AES
 import base64
 
-data = 'NnJyrVT80DxOU5jOxHdZ9NRlaLPRhaAUYANfaVACUeqcrPoXz5eeTs9m6X2fVJC9SJ+X03mu3zD/WTiUjwzIyg=='
-key = 'Bk fom] H (J \'|,'
+#change these for your own ciphertext & key!!!!!
+data = '89NEvN56VtNjo1w5x3whmFUOZOqTaRyoMnIrPjCGKUv5n7kgGFHDmStzEgDFAU7QnZOK9MLeO/FW4etzIOhpKfOsw5xSD4Em72X1O2FRfaM='
+key = '2 ? mYD;@ ;x v"i'
 
 keyarr = bytearray(key,"utf8")
 #substitute btyes in key for the unknown bytes
@@ -18,8 +19,8 @@ for a in range(33,127):
     for b in range(33,127):
         for c in range (33,127):
             for d in range(33,127):
-                keyarr[2] = a
-                keyarr[7] = b
+                keyarr[1] = a
+                keyarr[3] = b
                 keyarr[9] = c
                 keyarr[12] = d
                 keybytes = bytes(keyarr)
