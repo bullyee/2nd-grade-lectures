@@ -1,6 +1,6 @@
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Information Security Homework 4
-Brute Force partially known AES cipherkey
+Brute Force partially known AES cipherkey & plaintext
 author: https://github.com/bullyee
 date: 2023/10/16 23:27
 requires package: Cryptodome
